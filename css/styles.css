@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+
+/* .img-card{
+    width: 40%;
+} */
+
+.img-card img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 520px;
+  object-fit: cover;
+}
+
+.small-Card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+.small-Card img {
+  width: 104px;
+  height: 104px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.small-Card img:active {
+  border: 1px solid #17696a;
+}
+
+.sm-card {
+  border: 2px solid darkred;
+}
+
+.product-info{
+  width: 60%;
+}
+.product-info h3 {
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.product-info h5 {
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ff4242;
+  margin: 6px 0;
+}
+
+.product-info del {
+  color: #a9a9a9;
+}
+
+.product-info p {
+  color: #424551;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.sizes p {
+  font-size: 22px;
+  color: black;
+}
+
+.size-option {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.quantity input {
+  width: 51px;
+  height: 33px;
+  margin-bottom: 15px;
+  padding: 6px;
+}
+
+button {
+  background: #17696a;
+  border-radius: 4px;
+  padding: 10px 37px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #ff4242;
+  transition: ease-in 0.4s;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: #787a80;
+  font-size: 12px;
+  font-family: Lato;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+hr {
+  color: #787a80;
+  width: 58%;
+  opacity: 0.67;
+}
+
+.pagination {
+    color: #787a80;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .product-container{
+    flex-direction: column;
+  }
+  .small-Card img{
+    width: 80px;
+  }
+  .product-info{
+    width: 100%;
+  }
+  echo "# product-details-page-html-css-js" >> README.md
+  .product-info p{
+    width: 100%;
+  }
+
+  .delivery{
+    width: 100%;
+  }
+
+  hr{
+    width: 100%;
+  }
+}
